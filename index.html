@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>AI Poem and Story Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Poem and Story Generator</h1>
+        <input type="text" id="topic" placeholder="Enter a topic/keyword">
+        <select id="genre">
+            <option value="Poem">Poem</option>
+            <option value="Story">Story</option>
+        </select>
+        <button id="generate">Generate</button>
+        <div id="output"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
